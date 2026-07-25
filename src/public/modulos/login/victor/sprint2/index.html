@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de notícia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Imagem esquerda -->
+        <div class="imagem-lateral">
+            <img src="img-esquerda.png">
+        </div>
+
+
+        <!-- Conteúdo principal -->
+        <main>
+            <h1>Cadastrar notícia climática</h1>
+
+            <div class="card">
+                <label>
+                    Informe o título da notícia:
+                </label>
+
+                <input type="text" id="titulo" placeholder="Título">
+
+                <label>
+                    Informe o subtítulo da notícia:
+                </label>
+
+                <input type="text" id="subtitulo" placeholder="Subtítulo">
+
+                <label>
+                    Descreva a notícia
+                </label>
+
+                <textarea id="descricao" placeholder="Descrição"></textarea>
+            </div>
+
+
+            <h2>Filtrar desastre natural</h2>
+
+            <select id="tipo">
+                <option selected disabled>Tipo de desastre</option>
+
+                <option>Alagamento</option>
+
+                <option>Deslizamento</option>
+            </select>
+
+
+
+            <select id="regiao">
+                <option selected disabled>Região do desastre</option>
+
+                <option>Norte</option>
+
+                <option>Nordeste</option>
+
+                <option>Centro-Oeste</option>
+
+                <option>Sudeste</option>
+
+                <option>Sul</option>
+            </select>
+
+
+
+            <select id="severidade">
+                <option selected disabled>Severidade do desastre</option>
+
+                <option>Baixa</option>
+
+                <option>Média</option>
+
+                <option>Alta</option>
+
+                <option>Crítica</option>
+            </select>
+
+
+            <div class="botoes">
+                <button id="cancelar">Cancelar</button>
+
+                <button id="enviar">Enviar</button>
+            </div>
+        </main>
+
+        <!-- Imagem direita -->
+        <div class="imagem-lateral">
+            <img src="img-direita.png">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

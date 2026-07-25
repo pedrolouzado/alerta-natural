@@ -1,0 +1,231 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+body{
+
+    background:#eaf1fa;
+
+    min-height:100vh;
+
+    color:#1a1a1a;
+
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+.header-simple{
+
+    width:100%;
+    padding:20px;
+
+}
+
+.btn-voltar{
+
+    text-decoration:none;
+
+    color:#021a47;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-voltar:hover{
+
+    color:#326CE5;
+
+}
+
+/* ==========================
+   FORMULÁRIO
+========================== */
+
+.form-main{
+
+    width:100%;
+    max-width:850px;
+
+    margin:0 auto;
+
+    padding:20px;
+
+}
+.form-main h1{
+
+    font-size:32px;
+
+    color:#021a47;
+
+    margin-bottom:10px;
+
+}
+
+.form-main p{
+
+    color:#64748b;
+
+    margin-bottom:35px;
+
+}
+
+/* ==========================
+   FORM
+========================== */
+
+#formEndereco{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+/* ==========================
+   INPUT GROUP
+========================== */
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:20px;
+
+}
+
+.input-group label{
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+.input-group input{
+
+    height:50px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:12px;
+
+    padding:0 15px;
+
+    font-size:15px;
+
+    transition:.2s;
+
+}
+
+.input-group input:focus{
+
+    outline:none;
+
+    border-color:#326CE5;
+
+    box-shadow:0 0 0 3px rgba(50,108,229,.12);
+
+}
+
+/* ==========================
+   LINHAS
+========================== */
+
+.input-row{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.input-row .input-group{
+
+    flex:1;
+
+}
+
+/* ==========================
+   BOTÃO
+========================== */
+
+.btn-salvar{
+
+    width:100%;
+
+    margin-top:15px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#326CE5;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.btn-salvar:hover{
+
+    background:#2457c5;
+
+}
+
+/* ==========================
+   RESPONSIVO
+========================== */
+
+@media(max-width:768px){
+
+    #formEndereco{
+
+        padding:25px;
+
+    }
+
+    .input-row{
+
+        flex-direction:column;
+
+        gap:0;
+
+    }
+
+    .form-main h1{
+
+        font-size:26px;
+
+    }
+
+}

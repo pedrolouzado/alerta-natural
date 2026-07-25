@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Perfil - Alerta Natural</title>
+
+  <link rel="stylesheet" href="../css/perfil.css">
+</head>
+
+<body>
+
+  <header class="header-main">
+    <button class="icon-btn" onclick="history.back()">←</button>
+
+    <div class="top-actions">
+      <div class="search-wrap">
+        <input type="text" placeholder="Pesquisar...">
+
+        <div class="search-avatar">
+          <div class="avatar-sm-head"></div>
+          <div class="avatar-sm-body"></div>
+        </div>
+      </div>
+
+      <div class="header-icons">
+        <div class="icon-circle" id="btnNotificacoes" title="Notificações">
+          🔔
+        </div>
+
+        <div class="icon-circle" id="btnConfiguracoes" title="Editar perfil">
+          ⚙️
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="profile-main">
+
+    <section class="profile-info">
+      <div class="avatar-large">
+        <div class="avatar-head"></div>
+        <div class="avatar-body"></div>
+      </div>
+
+      <h1 id="nomeUsuario">Nome de usuário</h1>
+      <p id="dadosUsuario">(00) 90000-0000 • usuario@email.com</p>
+    </section>
+
+    <section class="location-cards">
+
+      <div class="map-card" onclick="window.location.href='endereco.html'">
+        <div class="card-header">
+          <span class="card-icon red-pin">📍</span>
+          <h3>Minha localização</h3>
+          <span class="arrow-link">↗</span>
+        </div>
+
+        <div class="map-placeholder"></div>
+      </div>
+
+      <div class="map-card" onclick="window.location.href='endereco.html'">
+        <div class="card-header">
+          <span class="card-icon red-home">🏠</span>
+          <h3>Casa</h3>
+          <span class="arrow-link">↗</span>
+        </div>
+
+        <div class="map-placeholder"></div>
+      </div>
+
+    </section>
+
+    <section class="editar-perfil" id="editarPerfil">
+     <h2>Configurações do Perfil</h2>
+
+<form id="formEditarPerfil">
+  <div class="input-group-perfil">
+    <label>Nome</label>
+    <input type="text" id="editarNome">
+  </div>
+
+  <div class="input-group-perfil">
+    <label>Telefone</label>
+    <input type="text" id="editarTelefone">
+  </div>
+
+  <div class="input-group-perfil">
+    <label>Email</label>
+    <input type="email" id="editarEmail">
+  </div>
+
+  
+</form>
+
+<hr>
+
+<hr>
+
+  <button type="button" class="config-btn" id="btnRecuperarSenha">
+    🔑 Alterar Senha
+  </button>
+
+  <form id="formAlterarSenha" class="form-senha">
+  <div class="input-group-perfil">
+    <label>Nova senha</label>
+    <input type="password" id="novaSenha">
+  </div>
+
+  <div class="input-group-perfil">
+    <label>Confirmar nova senha</label>
+    <input type="password" id="confirmarNovaSenha">
+  </div>
+
+  <button type="submit" class="salvar-perfil-btn">
+    Salvar Nova Senha
+  </button>
+</form>
+
+</div>
+
+<form id="formAlterarSenha" class="form-senha">
+
+    ...
+
+</form>
+
+<div class="acoes-configuracoes">
+
+    <button
+        type="submit"
+        form="formEditarPerfil"
+        class="salvar-perfil-btn">
+
+        💾 Salvar Alterações
+
+    </button>
+
+</div>
+
+    </section>
+
+    <div class="profile-actions">
+      <a href="../index.html" class="secondary-btn">
+        ← Voltar ao monitoramento
+      </a>
+
+      <button class="logout-btn" id="btnLogout">
+        Sair
+      </button>
+    </div>
+
+  </main>
+
+  <script src="../js/config.js"></script>
+<script src="../js/perfil.js"></script>
+
+</body>
+
+</html>

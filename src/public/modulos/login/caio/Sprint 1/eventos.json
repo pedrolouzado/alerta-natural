@@ -1,0 +1,14 @@
+[
+  {
+    "data": "2026-05-14",
+    "cidade": "São Paulo",
+    "tipo": "alagamento",
+    "risco": "alto"
+  },
+  {
+    "data": "2026-05-20",
+    "cidade": "Petrópolis",
+    "tipo": "deslizamento",
+    "risco": "médio"
+  }
+]

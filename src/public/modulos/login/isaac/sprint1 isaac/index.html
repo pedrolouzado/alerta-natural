@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1Z" fill="black"/>
+                <rect x="11" y="7" width="2" height="8" fill="white"/>
+                <rect x="11" y="17" width="2" height="2" fill="white"/>
+            </svg>
+        </div>
+        
+        <h1>Criar conta</h1>
+        <p class="subtitle">Preencha seus dados para continuar</p>
+
+        <div class="input-group">
+            <i class='bx bx-user'></i>
+            <input type="text" id="nomeCompleto" placeholder="Nome completo">
+        </div>
+
+        <div class="input-group">
+            <i class='bx bx-envelope'></i>
+            <input type="email" id="email" placeholder="Email">
+        </div>
+
+        <div class="input-group">
+            <i class='bx bx-lock-alt'></i>
+            <input type="password" id="senha" placeholder="Senha">
+        </div>
+
+        <div class="input-group">
+            <i class='bx bx-lock-alt'></i>
+            <input type="password" id="confirmarSenha" placeholder="Confirmar Senha">
+        </div>
+
+        <div class="input-group">
+            <i class='bx bx-map'></i>
+            <input type="text" id="localizacao" placeholder="Localização">
+        </div>
+
+        <button class="btn-create" onclick="criarConta()">
+            <i class='bx bx-user'></i>
+            <span>Criar conta</span>
+        </button>
+
+        <p class="register-text">Já tem conta ? <a href="#">Entrar</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,540 @@
+/* ==========================
+   RESET
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: "Segoe UI", sans-serif;
+
+    background: #eef3f8;
+
+    overflow: hidden;
+}
+
+
+/* ==========================
+   DASHBOARD
+========================== */
+
+.dashboard {
+
+    display: flex;
+
+    height: 100vh;
+}
+
+
+/* ==========================
+   SIDEBAR
+========================== */
+
+.sidebar {
+
+    width: 280px;
+
+    background: linear-gradient(
+        180deg,
+        #021a47 0%,
+        #032a70 100%
+    );
+
+    color: white;
+
+    padding: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    border-right: 1px solid rgba(255,255,255,0.08);
+
+    box-shadow: 8px 0px 30px rgba(0,0,0,0.15);
+}
+
+
+/* ==========================
+   LOGO
+========================== */
+
+.logo {
+
+    margin-bottom: 10px;
+}
+
+.logo h1 {
+
+    font-size: 1.8rem;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+
+/* ==========================
+   CARDS SIDEBAR
+========================== */
+
+.card-painel {
+
+    background: rgba(255,255,255,0.12);
+
+    border-radius: 18px;
+
+    padding: 18px;
+
+    backdrop-filter: blur(10px);
+}
+
+.card-painel h3 {
+
+    font-size: 1rem;
+
+    margin-bottom: 15px;
+
+    font-weight: 700;
+}
+
+.card-painel p {
+
+    margin-bottom: 8px;
+}
+
+.card-painel .form-control,
+.card-painel .form-select {
+
+    border-radius: 12px;
+
+    border: none;
+}
+
+
+/* ==========================
+   LINK ADMIN
+========================== */
+
+.admin-link {
+
+    margin-top: auto;
+
+    text-align: center;
+
+    padding-top: 15px;
+
+    border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+.admin-link a {
+
+    color: rgba(255,255,255,0.8);
+
+    text-decoration: none;
+
+    font-size: 0.95rem;
+
+    transition: .3s;
+}
+
+.admin-link a:hover {
+
+    color: white;
+}
+
+
+/* ==========================
+   CONTEÚDO
+========================== */
+
+.conteudo {
+
+    flex: 1;
+
+    padding: 25px;
+
+    overflow-y: auto;
+}
+
+
+/* ==========================
+   TÍTULO
+========================== */
+
+.titulo {
+
+    margin-bottom: 20px;
+}
+
+.titulo h2 {
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    color: #212529;
+}
+
+.titulo p {
+
+    color: #6c757d;
+}
+
+
+/* ==========================
+   MAPA
+========================== */
+
+.mapa-card {
+
+    background: white;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+    height: 465px;
+
+    margin-bottom: 40px;
+}
+
+#map {
+
+    width: 100%;
+
+    height: 100%;
+}
+
+
+/* ==========================
+   INFORMAÇÕES
+========================== */
+
+.info-card {
+
+    background: linear-gradient(
+        135deg,
+        #021a47,
+        #032a70
+    );
+
+    color: white;
+
+    border-radius: 25px;
+
+    padding: 25px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.info-card h3 {
+
+    margin-bottom: 20px;
+
+    font-weight: 700;
+}
+
+.info-card hr {
+
+    border-color: rgba(255,255,255,0.2);
+
+    margin: 20px 0;
+}
+
+.info-card ul {
+
+    padding-left: 20px;
+}
+
+.info-card li {
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   GRID CONTATOS
+========================= */
+
+.info-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:14px;
+}
+.contato-card{
+
+    background:#00286f;
+
+    border-radius:18px;
+
+    padding:12px 18px;
+
+    min-height:70px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.contato-card span{
+
+    font-weight:600;
+
+    color:white;
+}
+
+.contato-card strong{
+
+    font-size:1.5rem;
+
+    color:#ffffff;
+}
+
+
+
+
+/* ==========================
+   PAINEL ALERTAS
+========================== */
+
+.alertas {
+
+    width: 380px;
+
+    background: white;
+
+    padding: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    height: 100vh;
+
+    box-shadow: -4px 0px 20px rgba(0,0,0,0.08);
+}
+
+
+/* ==========================
+   CABEÇALHO ALERTAS
+========================== */
+
+.alertas-header {
+
+    margin-bottom: 20px;
+
+    flex-shrink: 0;
+}
+
+.alertas-header h2 {
+
+    font-size: 1.7rem;
+
+    font-weight: 700;
+}
+
+.alertas-header p {
+
+    color: #6c757d;
+}
+
+
+/* ==========================
+   SCROLL ALERTAS
+========================== */
+
+#listaAlertas {
+
+    flex: 1;
+
+    overflow-y: auto;
+
+    padding-right: 8px;
+}
+
+#listaAlertas::-webkit-scrollbar {
+
+    width: 8px;
+}
+
+#listaAlertas::-webkit-scrollbar-thumb {
+
+    background: #c9ced6;
+
+    border-radius: 20px;
+}
+
+
+/* ==========================
+   ALERTA CARD
+========================== */
+
+.alerta-card {
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 18px;
+
+    margin-bottom: 18px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+
+    transition: .3s;
+}
+
+.alerta-card:hover {
+
+    transform: translateY(-4px);
+}
+
+.alerta-card.alto {
+
+    border-left: 6px solid #dc3545;
+}
+
+.alerta-card.medio {
+
+    border-left: 6px solid #ffc107;
+}
+
+.alerta-card.baixo {
+
+    border-left: 6px solid #198754;
+}
+
+.alerta-tipo {
+
+    text-transform: uppercase;
+
+    font-size: .75rem;
+
+    letter-spacing: 1px;
+
+    font-weight: 700;
+
+    color: #6c757d;
+
+    margin-bottom: 10px;
+}
+
+.alerta-cidade {
+
+    font-size: 1.15rem;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.alerta-descricao {
+
+    color: #6c757d;
+
+    margin-bottom: 10px;
+
+    line-height: 1.5;
+}
+
+.alerta-data {
+
+    font-size: .85rem;
+
+    color: #6c757d;
+
+    margin-bottom: 12px;
+}
+
+
+/* ==========================
+   BADGES
+========================== */
+
+.badge {
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+}
+
+.badge-alto {
+
+    background: #dc3545;
+}
+
+.badge-medio {
+
+    background: #ffc107;
+
+    color: black;
+}
+
+.badge-baixo {
+
+    background: #198754;
+}
+
+
+/* ==========================
+   RESPONSIVO
+========================== */
+
+@media (max-width: 1200px) {
+
+    .dashboard {
+
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .alertas {
+
+        width: 100%;
+    }
+
+    .mapa-card {
+
+        height: 350px;
+    }
+
+    .info-grid {
+
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .info-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .logo h1 {
+
+        font-size: 1.5rem;
+    }
+
+    .titulo h2 {
+
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastrar Endereço</title>
+
+    <link rel="stylesheet"
+          href="../css/endereco.css">
+
+</head>
+
+<body>
+
+<header class="header-simple">
+
+    <a href="perfil.html"
+       class="btn-voltar">
+
+        ← Voltar
+
+    </a>
+
+</header>
+
+<main class="form-main">
+
+    <h1>
+
+        📍 Cadastrar Endereço
+
+    </h1>
+
+    <p>
+
+        Preencha os dados da sua localização.
+
+    </p>
+
+    <form id="formEndereco">
+
+        <div class="input-group">
+
+            <label>CEP</label>
+
+            <input
+                type="text"
+                id="cep"
+                placeholder="00000-000"
+                required>
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Logradouro</label>
+
+            <input
+                type="text"
+                id="logradouro"
+                placeholder="Rua / Avenida"
+                required>
+
+        </div>
+
+        <div class="input-row">
+
+            <div class="input-group">
+
+                <label>Número</label>
+
+                <input
+                    type="text"
+                    id="numero"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Complemento</label>
+
+                <input
+                    type="text"
+                    id="complemento">
+
+            </div>
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Bairro</label>
+
+            <input
+                type="text"
+                id="bairro"
+                required>
+
+        </div>
+
+        <div class="input-row">
+
+            <div class="input-group">
+
+                <label>Cidade</label>
+
+                <input
+                    type="text"
+                    id="cidade"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Estado</label>
+
+                <input
+                    type="text"
+                    id="estado"
+                    maxlength="2"
+                    required>
+
+            </div>
+
+        </div>
+
+        <button
+            type="submit"
+            class="btn-salvar">
+
+            💾 Salvar Endereço
+
+        </button>
+
+    </form>
+
+</main>
+
+<script src="../js/config.js"></script>
+<script src="../js/endereco.js"></script>
+
+</body>
+
+</html>

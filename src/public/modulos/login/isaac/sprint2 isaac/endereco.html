@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Endereço</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-simple">
+        <button class="icon-btn" onclick="history.back()">&#8592;</button>
+    </header>
+    
+    <main class="form-main">
+        <h1>Cadastrar endereço</h1>
+        <p class="subtitle">Preencha os dados da sua localização</p>
+        
+        <form id="addressForm" class="styled-form">
+            <div class="input-group">
+                <span class="input-icon">&#128205;</span>
+                <input type="text" id="cep" placeholder="CEP" required>
+            </div>
+            
+            <div class="input-group">
+                <span class="input-icon">&#128664;</span>
+                <input type="text" id="logradouro" placeholder="Logradouro" required>
+            </div>
+            
+            <div class="input-row">
+                <div class="input-group">
+                    <input type="text" id="numero" placeholder="Número" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="complemento" placeholder="Complemento">
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <span class="input-icon">&#127968;</span>
+                <input type="text" id="bairro" placeholder="Bairro" required>
+            </div>
+            
+            <div class="input-row">
+                <div class="input-group">
+                    <input type="text" id="cidade" placeholder="Cidade" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="estado" placeholder="Estado" required>
+                </div>
+            </div>
+            
+            <button type="submit" class="primary-btn">Salvar Endereço</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

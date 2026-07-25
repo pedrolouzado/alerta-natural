@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alerta Natural - Calendário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="top-nav">
+    <div class="logo">
+      <span class="icone-logo">⚠️</span>
+      <div>
+        <h1>ALERTA NATURAL</h1>
+        <p>SISTEMA DE MONITORAMENTO</p>
+      </div>
+    </div>
+    <nav class="menu">
+      <a href="#" class="ativo">📅 Calendário</a>
+      <a href="#">🗺️ Mapa</a>
+      <a href="#">⚙️ Configurações</a>
+    </nav>
+    <div class="user-info">
+<select id="seletor-cidade">
+    <option value="atual" selected>📍 Localização Atual</option>
+    <option value="brasil"> Brasil (Todos os Alertas)</option>
+    
+    <option value="anandindeua">📍 Ananindeua</option>
+    <option value="anapolis">📍 Anápolis</option>
+    <option value="aracaju">📍 Aracaju</option>
+    <option value="araguaina">📍 Araguaína</option>
+    <option value="arapiraca">📍 Arapiraca</option>
+    <option value="belem">📍 Belém</option>
+    <option value="belo_horizonte">📍 Belo Horizonte</option>
+    <option value="betim">📍 Betim</option>
+    <option value="boa_vista">📍 Boa Vista</option>
+    <option value="brasilia">📍 Brasília</option>
+    <option value="campina_grande">📍 Campina Grande</option>
+    <option value="campinas">📍 Campinas</option>
+    <option value="campo_grande">📍 Campo Grande</option>
+    <option value="caucaia">📍 Caucaia</option>
+    <option value="caxias_do_sul">📍 Caxias do Sul</option>
+    <option value="cruzeiro_do_sul">📍 Cruzeiro do Sul</option>
+    <option value="cuiaba">📍 Cuiabá</option>
+    <option value="curitiba">📍 Curitiba</option>
+    <option value="dourados">📍 Dourados</option>
+    <option value="duque_de_caxias">📍 Duque de Caxias</option>
+    <option value="feira_de_santana">📍 Feira de Santana</option>
+    <option value="florianopolis">📍 Florianópolis</option>
+    <option value="fortaleza">📍 Fortaleza</option>
+    <option value="goiania">📍 Goiânia</option>
+    <option value="imperatriz">📍 Imperatriz</option>
+    <option value="ji_parana">📍 Ji-Paraná</option>
+    <option value="joao_pessoa">📍 João Pessoa</option>
+    <option value="joinville">📍 Joinville</option>
+    <option value="londrina">📍 Londrina</option>
+    <option value="macapa">📍 Macapá</option>
+    <option value="maceio">📍 Maceió</option>
+    <option value="manaus">📍 Manaus</option>
+    <option value="mossoro">📍 Mossoró</option>
+    <option value="natal">📍 Natal</option>
+    <option value="nossa_senhora_do_socorro">📍 N. Sra. do Socorro</option>
+    <option value="palmas">📍 Palmas</option>
+    <option value="parnaiba">📍 Parnaíba</option>
+    <option value="porto_alegre">📍 Porto Alegre</option>
+    <option value="porto_velho">📍 Porto Velho</option>
+    <option value="recife">📍 Recife</option>
+    <option value="rio_branco">📍 Rio Branco</option>
+    <option value="rio_janeiro">📍 Rio de Janeiro</option>
+    <option value="rorainopolis">📍 Rorainópolis</option>
+    <option value="salvador">📍 Salvador</option>
+    <option value="santana">📍 Santana</option>
+    <option value="sao_luis">📍 São Luís</option>
+    <option value="sao_paulo">📍 São Paulo</option>
+    <option value="teresina">📍 Teresina</option>
+    <option value="uberlandia">📍 Uberlândia</option>
+    <option value="varzea_grande">📍 Várzea Grande</option>
+    <option value="vila_velha">📍 Vila Velha</option>
+    <option value="vitoria">📍 Vitória</option>
+</select>
+      <div class="perfil-icone">👤</div>
+    </div>
+  </header>
+
+  <main class="dashboard">
+
+    <section class="painel-calendario">
+
+<div class="calendario-header">
+    <button id="btn-mes-anterior">&lt;</button>
+    <div class="header-central">
+        <h2 id="mes-ano-display">Junho 2026</h2>
+        <div class="navegacao-rapida">
+            <select id="seletor-mes-rapido">
+                <option value="0">Janeiro</option>
+                <option value="1">Fevereiro</option>
+                <option value="2">Março</option>
+                <option value="3">Abril</option>
+                <option value="4">Maio</option>
+                <option value="5">Junho</option>
+                <option value="6">Julho</option>
+                <option value="7">Agosto</option>
+                <option value="8">Setembro</option>
+                <option value="9">Outubro</option>
+                <option value="10">Novembro</option>
+                <option value="11">Dezembro</option>
+            </select>
+            <input type="number" id="input-ano-rapido" min="2000" max="2100" placeholder="Ano">
+            <button id="btn-ir-data">Ir</button>
+        </div>
+    </div>
+    <button id="btn-mes-proximo">&gt;</button>
+</div>
+
+      <div class="legendas">
+        <div class="niveis-risco">
+          <h3>NÍVEIS DE RISCO</h3>
+          <ul>
+            <li><span class="bolinha baixo"></span> Baixo risco</li>
+            <li><span class="bolinha medio"></span> Médio risco</li>
+            <li><span class="bolinha alto"></span> Alto risco</li>
+          </ul>
+        </div>
+        <div class="tipos-alerta">
+          <h3>TIPOS DE ALERTA</h3>
+          <ul>
+            <li>🌊 Alagamento</li>
+            <li>⛰️ Deslizamento</li>
+            <li>⛈️ Temporal</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="calendario-container">
+        <div class="dias-semana">
+          <span>DOM</span><span>SEG</span><span>TER</span><span>QUA</span>
+          <span>QUI</span><span>SEX</span><span>SAB</span>
+        </div>
+        <div id="grid-calendario" class="grid-dias"></div>
+      </div>
+    </section>
+
+    <aside class="painel-detalhes">
+      <div class="detalhe-card">
+        <div class="detalhe-header">
+          <span id="detalhe-data">Selecione uma data</span>
+          <span id="detalhe-risco" class="badge-risco"></span>
+        </div>
+
+        <h2 id="detalhe-titulo">Nenhum alerta selecionado</h2>
+
+        <ul class="detalhe-infos">
+          <li>📍 <strong>Cidade:</strong> <span id="detalhe-cidade">-</span></li>
+          <li>🏘️ <strong>Bairro:</strong> <span id="detalhe-bairro">-</span></li>
+          <li>🕒 <span id="detalhe-periodo">Período: -</span></li>
+        </ul>
+
+        <div class="detalhe-descricao-box">
+          <h3>Descrição</h3>
+          <p id="detalhe-descricao">Clique em um dia com ícone de alerta no calendário para ver os detalhes aqui.</p>
+        </div>
+
+        <div class="detalhe-recomendacoes-box">
+          <h3>Recomendações</h3>
+          <ul id="detalhe-recomendas">
+          </ul>
+        </div>
+      </div>
+
+      <div class="ultimos-alertas">
+        <div class="ultimos-header">
+          <h3>Últimos alertas</h3>
+        </div>
+        <ul id="lista-ultimos-alertas">
+        </ul>
+      </div>
+    </aside>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

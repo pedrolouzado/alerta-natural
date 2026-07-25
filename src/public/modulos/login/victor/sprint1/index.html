@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias Climáticas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="container">
+ 
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <h3>Tipo de desastre:</h3>
+                <label>
+                    <input type="checkbox" class="disaster-check" value="Alagamento" checked>
+                    Alagamento
+                </label>
+
+                <label>
+                    <input type="checkbox" class="disaster-check" value="Deslizamento" checked>
+                    Deslizamento
+                </label>
+
+            <h3>Região:</h3>
+
+            <select id="region">
+
+                <option value="Todas">
+                    Todas as regiões
+                </option>
+
+                <option value="Norte">
+                    Norte
+                </option>
+
+                <option value="Nordeste">
+                    Nordeste
+                </option>
+
+                <option value="Centro-Oeste">
+                    Centro-Oeste
+                </option>
+
+                <option value="Sudeste">
+                    Sudeste
+                </option>
+
+                <option value="Sul">
+                    Sul
+                </option>
+
+            </select>
+
+            <h3>Severidade:</h3>
+
+                <label>
+                    <input type="checkbox" class="severity-check" value="Crítica" checked>
+                    🔴 Crítica
+                </label>
+
+                <label>
+                    <input type="checkbox" class="severity-check" value="Alta" checked>
+                    🟠 Alta
+                </label>
+
+                <label>
+                    <input type="checkbox" class="severity-check" value="Média" checked>
+                    🟡 Média
+                </label>
+
+                <label>
+                    <input type="checkbox" class="severity-check"  value="Baixa" checked>
+                    🟢 Baixa
+                </label>
+
+            <button class="aplicar" id="btn-filter">
+                Aplicar filtros
+            </button>
+        </aside>
+
+        <!-- CONTEÚDO -->
+
+        <section class="content">
+
+            <div class="top-bar">
+
+                <p id="results">
+                    0 notícias encontradas
+                </p>
+
+                <div class="sort-box">
+
+                    <label>
+                        Ordenar por:
+                    </label>
+
+                    <select id="sort">
+
+                        <option value="recentes">
+                            Mais recentes
+                        </option>
+
+                        <option value="antigas">
+                            Mais antigas
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <!-- FEED -->
+            <div id="news-list"></div>
+
+            <!-- PAGINAÇÃO -->
+            <div class="pagination">
+
+                <button id="prev">
+                    Anterior
+                </button>
+
+                <button class="page active">
+                    1
+                </button>
+
+                <button class="page">
+                    2
+                </button>
+
+                <button class="page">
+                    3
+                </button>
+
+                <button class="page">
+                    4
+                </button>
+
+                <button id="next">
+                    Próxima
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

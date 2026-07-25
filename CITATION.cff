@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "Please cite this software using these metadata."
+title: Desastres Naturais
+authors:
+  - family-names: Caldas
+    given-names: Caio José Guimarães
+  - family-names: Dutra
+    given-names: Isaac Santos
+  - family-names: Louzado
+    given-names: Pedro Marcos Mesquita
+  - family-names: Santos
+    given-names: Victor Fernandes dos
+  - family-names: Diniz
+    given-names: Vitor Fernandes
+  - family-names: Costa
+    given-names: Roselene Henrique Pereira
+    name-suffix: "Professor(a)"
+    affiliation: PUC Minas
+keywords:
+    - monitoramento
+    - prevenção
+    - alagamentos
+    - deslizamentos
+    - mapa interativo
+    - alertas
+repository-code: https://github.com/ICEI-PUC-Minas-PBE-SI-TI/2026-1-p1-tiawfe-desastresnaturais.git
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2026-06-22 

@@ -1,0 +1,342 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+body{
+
+    background:#eef3f8;
+
+    color:#1e293b;
+
+    line-height:1.7;
+
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+.about-header{
+
+    background:linear-gradient(135deg,#021a47,#032a70);
+
+    color:white;
+
+    padding:35px 60px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+}
+
+.about-header h1{
+
+    font-size:2rem;
+
+    margin-bottom:5px;
+
+}
+
+.about-header p{
+
+    color:rgba(255,255,255,.75);
+
+}
+
+.about-header nav{
+
+    display:flex;
+
+    gap:18px;
+
+}
+
+.about-header nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:10px 18px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.about-header nav a:hover{
+
+    background:rgba(255,255,255,.15);
+
+}
+
+/* ==========================
+   MAIN
+========================== */
+
+.about-main{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:50px 25px;
+
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.about-hero{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:45px;
+
+    margin-bottom:35px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.about-hero h2{
+
+    font-size:2rem;
+
+    color:#021a47;
+
+    margin-bottom:18px;
+
+}
+
+.about-hero p{
+
+    color:#475569;
+
+    font-size:1.05rem;
+
+}
+
+/* ==========================
+   SEÇÕES
+========================== */
+
+.about-section{
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:35px;
+
+    margin-bottom:30px;
+
+    box-shadow:0 8px 22px rgba(0,0,0,.06);
+
+}
+
+.about-section h2{
+
+    color:#021a47;
+
+    margin-bottom:18px;
+
+}
+
+.about-section p{
+
+    color:#475569;
+
+}
+
+/* ==========================
+   GRID
+========================== */
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+}
+
+/* ==========================
+   CARDS
+========================== */
+
+.about-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:28px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    border-top:5px solid #2563eb;
+
+}
+
+.about-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.about-card h3{
+
+    color:#021a47;
+
+    margin-bottom:15px;
+
+}
+
+.about-card p{
+
+    color:#64748b;
+
+}
+
+/* ==========================
+   LISTAS
+========================== */
+
+.tech-list,
+.team-list{
+
+    list-style:none;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.tech-list li,
+.team-list li{
+
+    background:#f8fafc;
+
+    border-radius:12px;
+
+    padding:15px;
+
+    text-align:center;
+
+    font-weight:600;
+
+    color:#334155;
+
+    border:1px solid #dbe3ec;
+
+    transition:.3s;
+
+}
+
+.tech-list li:hover,
+.team-list li:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+.about-footer{
+
+    margin-top:40px;
+
+    background:#021a47;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+.about-footer p{
+
+    color:rgba(255,255,255,.75);
+
+}
+
+/* ==========================
+   RESPONSIVO
+========================== */
+
+@media(max-width:768px){
+
+    .about-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+        padding:30px;
+
+    }
+
+    .about-header nav{
+
+        flex-wrap:wrap;
+
+    }
+
+    .about-main{
+
+        padding:30px 15px;
+
+    }
+
+    .about-hero,
+    .about-section{
+
+        padding:25px;
+
+    }
+
+    .about-hero h2{
+
+        font-size:1.6rem;
+
+    }
+
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-main">
+        <button class="icon-btn" onclick="history.back()">&#8592;</button>
+        <div class="top-actions">
+            <div class="search-wrap">
+                <input type="text" placeholder="Pesquisar...">
+                <div class="search-avatar">
+                    <div class="avatar-sm-head"></div>
+                    <div class="avatar-sm-body"></div>
+                </div>
+            </div>
+            <div class="header-icons">
+                <div class="icon-circle">&#128276;</div>
+                <div class="icon-circle">&#9881;</div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="profile-main">
+        <div class="profile-info">
+            <div class="avatar-large">
+                <div class="avatar-head"></div>
+                <div class="avatar-body"></div>
+            </div>
+            <h1>Nome de usuário</h1>
+            <p>(00) 90000-0000 &bull; usuario@email.com</p>
+        </div>
+
+        <div class="location-cards">
+            <div class="map-card" onclick="window.location.href='endereco.html'">
+                <div class="card-header">
+                    <span class="card-icon red-pin">&#128205;</span>
+                    <h3>Minha localização</h3>
+                    <span class="arrow-link">&#8599;</span>
+                </div>
+                <div class="map-placeholder"></div>
+            </div>
+
+            <div class="map-card" onclick="window.location.href='endereco.html'">
+                <div class="card-header">
+                    <span class="card-icon red-home">&#127968;</span>
+                    <h3>Casa</h3>
+                    <span class="arrow-link">&#8599;</span>
+                </div>
+                <div class="map-placeholder"></div>
+            </div>
+        </div>
+
+        <button class="logout-btn">Sair</button>
+    </main>
+</body>
+</html>

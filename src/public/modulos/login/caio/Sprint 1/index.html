@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Calendar-AlertaNatural</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="layout">
+      <div class="formulario">
+        <h1>
+          Cadastro de Alertas Naturais
+        </h1>
+
+        <!-- data -->
+
+        <input type="date" id="data">
+
+        <!-- cidade -->
+
+        <input type="text" id="cidade" placeholder="Cidade brasileira" list="listaCidades">
+
+        <!-- lista cidades -->
+
+        <datalist id="listaCidades">
+
+          <option value="Aracaju">
+          <option value="Bauru">
+          <option value="Belém">
+          <option value="Belo Horizonte">
+          <option value="Betim">
+          <option value="Blumenau">
+          <option value="Boa Vista">
+          <option value="Brasília">
+          <option value="Campina Grande">
+          <option value="Campinas">
+          <option value="Campo Grande">
+          <option value="Caruaru">
+          <option value="Cascavel">
+          <option value="Caxias do Sul">
+          <option value="Chapecó">
+          <option value="Contagem">
+          <option value="Criciúma">
+          <option value="Cuiabá">
+          <option value="Curitiba">
+          <option value="Divinópolis">
+          <option value="Duque de Caxias">
+          <option value="Feira de Santana">
+          <option value="Florianópolis">
+          <option value="Fortaleza">
+          <option value="Goiânia">
+          <option value="Guarulhos">
+          <option value="Ilhéus">
+          <option value="Ipatinga">
+          <option value="João Pessoa">
+          <option value="Joinville">
+          <option value="Juiz de Fora">
+          <option value="Juazeiro do Norte">
+          <option value="Jundiaí">
+          <option value="Londrina">
+          <option value="Macapá">
+          <option value="Maceió">
+          <option value="Manaus">
+          <option value="Maringá">
+          <option value="Montes Claros">
+          <option value="Natal">
+          <option value="Niterói">
+          <option value="Nova Iguaçu">
+          <option value="Osasco">
+          <option value="Pelotas">
+          <option value="Petrópolis">
+          <option value="Piracicaba">
+          <option value="Ponta Grossa">
+          <option value="Porto Alegre">
+          <option value="Porto Velho">
+          <option value="Recife">
+          <option value="Ribeirão Preto">
+          <option value="Rio Branco">
+          <option value="Rio de Janeiro">
+          <option value="Salvador">
+          <option value="Santarem">
+          <option value="Santo André">
+          <option value="Santos">
+          <option value="São Bernardo do Campo">
+          <option value="São Caetano do Sul">
+          <option value="São Gonçalo">
+          <option value="São José dos Campos">
+          <option value="São Luís">
+          <option value="São Paulo">
+          <option value="Sorocaba">
+          <option value="Teresina">
+          <option value="Uberaba">
+          <option value="Uberlândia">
+          <option value="Vitória">
+          <option value="Volta Redonda">
+
+        </datalist>
+
+        <!-- tipo -->
+
+        <select id="tipo">
+
+          <option value="">
+            Selecione o tipo
+          </option>
+
+          <option value="alagamento">
+            Alagamento
+          </option>
+
+          <option value="deslizamento">
+            Deslizamento
+          </option>
+
+          <option value="chuva intensa">
+            Chuva intensa
+          </option>
+
+        </select>
+
+        <!-- risco -->
+
+        <select id="risco">
+
+          <option value="">
+            Selecione o risco
+          </option>
+
+          <option value="baixo">
+            Baixo
+          </option>
+
+          <option value="médio">
+            Médio
+          </option>
+
+          <option value="alto">
+            Alto
+          </option>
+
+        </select>
+
+        <!-- descrição -->
+
+        <textarea id="descricao" placeholder="Descrição do alerta"></textarea>
+
+        <!-- botão -->
+
+        <button onclick="salvarOcorrencia()">
+          Salvar alerta
+        </button>
+      </div>
+      <div class="alertas">
+
+        <h2>
+          Alertas cadastrados
+        </h2>
+
+        <div id="lista" class="lista-alertas"></div>
+
+      </div>
+      <script src="script.js"></script>
+    </div>
+  </div>
+</body>
+</html>
