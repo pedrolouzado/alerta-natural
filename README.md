@@ -78,5 +78,5 @@ git clone https://github.com/pedrolouzado/alerta-natural.git
 - **Disciplina:** Trabalho Interdisciplinar — Aplicações Web Front-End
 - **Instituição:** PUC Minas
 - **Período:** 1º semestre de 2026
-````
+
 
