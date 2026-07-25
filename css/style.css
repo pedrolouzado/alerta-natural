@@ -801,6 +801,11 @@ body {
     display: none;
 }
 
+/* O botão de fechar existe no HTML, mas só deve aparecer em tablets/celulares. */
+.btn-fechar-menu {
+    display: none;
+}
+
 /* ==========================
    RESPONSIVO - TABLETS
 ========================== */
@@ -1232,15 +1237,57 @@ body {
    AJUSTES FINAIS DE ESCALA E RESPONSIVIDADE
    ===================================================== */
 
-/* Aparência equivalente a 90% de zoom em telas desktop. */
+/*
+   Desktop compacto: reproduz a sensação visual de 90% sem usar `zoom`.
+   Assim, a página continua ocupando exatamente a largura da janela e o
+   painel da Central de Alertas não é empurrado para fora da tela.
+*/
 @media (min-width: 1201px) {
+    html {
+        font-size: 90%;
+    }
+
     body {
-        zoom: 0.9;
-        width: 111.111%;
+        zoom: 1;
+        width: 100%;
     }
 
     .dashboard {
-        min-height: 111.111vh;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .sidebar {
+        width: 252px;
+        padding: 22px;
+        gap: 18px;
+    }
+
+    .logo h3 {
+        font-size: 1.55rem;
+    }
+
+    .logo p {
+        font-size: 1rem;
+        line-height: 1.35;
+    }
+
+    .conteudo {
+        padding: 22px;
+    }
+
+    .alertas {
+        width: 342px;
+        padding: 22px;
+    }
+
+    .mapa-card {
+        height: 420px;
+        margin-bottom: 36px;
+    }
+
+    .secao {
+        margin-bottom: 45px;
     }
 }
 
