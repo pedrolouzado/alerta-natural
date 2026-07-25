@@ -1227,3 +1227,202 @@ body {
         font-size: 1.22rem;
     }
 }
+
+/* =====================================================
+   AJUSTES FINAIS DE ESCALA E RESPONSIVIDADE
+   ===================================================== */
+
+/* Aparência equivalente a 90% de zoom em telas desktop. */
+@media (min-width: 1201px) {
+    body {
+        zoom: 0.9;
+        width: 111.111%;
+    }
+
+    .dashboard {
+        min-height: 111.111vh;
+    }
+}
+
+/* Celulares: interface compacta, sem Central de Alertas lateral. */
+@media (max-width: 768px) {
+    /* A Central de Alertas não é exibida na versão para celular. */
+    .alertas {
+        display: none !important;
+    }
+
+    /* Telefones de emergência: dois cartões por linha. */
+    .info-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .contato-card {
+        min-width: 0;
+        min-height: 66px;
+        padding: 10px 11px;
+        gap: 6px;
+    }
+
+    .contato-card span {
+        min-width: 0;
+        font-size: .78rem;
+        line-height: 1.2;
+    }
+
+    .contato-card strong {
+        flex-shrink: 0;
+        font-size: 1.15rem;
+    }
+
+    /* O calendário inteiro cabe na largura da tela, sem rolagem lateral. */
+    .painel-calendario {
+        width: 100%;
+        min-width: 0;
+        padding: 10px 7px;
+        gap: 12px;
+        overflow-x: hidden;
+    }
+
+    .calendario-header {
+        min-width: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 30px minmax(0, 1fr) 30px;
+        gap: 4px;
+        align-items: start;
+    }
+
+    .calendario-header > button {
+        padding: 3px;
+        font-size: 1.25rem;
+    }
+
+    .header-central {
+        min-width: 0;
+        width: 100%;
+        gap: 7px;
+    }
+
+    .header-central h3 {
+        font-size: 1.12rem;
+        white-space: nowrap;
+    }
+
+    .navegacao-rapida {
+        width: 100%;
+        min-width: 0;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 58px 38px;
+        gap: 4px;
+        padding: 4px;
+    }
+
+    .navegacao-rapida select,
+    .navegacao-rapida input,
+    #btn-ir-data {
+        width: 100%;
+        min-width: 0;
+        height: 34px;
+        padding: 3px 5px;
+        font-size: .72rem;
+    }
+
+    #btn-ir-data {
+        padding-inline: 4px;
+    }
+
+    .legendas {
+        min-width: 0;
+        width: 100%;
+        padding: 9px 7px;
+        gap: 8px;
+    }
+
+    .legendas > div {
+        min-width: 0;
+    }
+
+    .legendas h4 {
+        margin-bottom: 5px;
+        font-size: .66rem;
+    }
+
+    .legendas ul {
+        gap: 5px 8px;
+        font-size: .66rem;
+        line-height: 1.15;
+    }
+
+    .bolinha {
+        width: 7px;
+        height: 7px;
+        margin-right: 3px;
+    }
+
+    .calendario-container {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .dias-semana {
+        width: 100%;
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+        gap: 2px;
+        margin-bottom: 5px;
+        font-size: .58rem;
+    }
+
+    .grid-dias {
+        width: 100%;
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+        gap: 2px;
+    }
+
+    .dia-calendario {
+        min-width: 0;
+        min-height: 43px;
+        padding: 3px 2px;
+        border-radius: 4px;
+        font-size: .62rem;
+        overflow: hidden;
+    }
+
+    .icone-alerta {
+        max-width: 100%;
+        font-size: .88rem;
+        line-height: 1;
+    }
+}
+
+@media (max-width: 420px) {
+    .contato-card {
+        min-height: 62px;
+        padding: 8px 9px;
+    }
+
+    .contato-card span {
+        font-size: .72rem;
+    }
+
+    .contato-card strong {
+        font-size: 1.02rem;
+    }
+
+    .painel-calendario {
+        padding-inline: 5px;
+    }
+
+    .legendas ul {
+        font-size: .6rem;
+    }
+
+    .dia-calendario {
+        min-height: 39px;
+        font-size: .57rem;
+    }
+
+    .icone-alerta {
+        font-size: .78rem;
+    }
+}
