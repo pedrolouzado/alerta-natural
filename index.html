@@ -14,9 +14,21 @@
 
 <body>
 
+  <header class="mobile-header">
+    <div class="mobile-brand">
+      <strong>🌎 Alerta Natural</strong>
+      <span>Sistema de Monitoramento</span>
+    </div>
+    <button type="button" class="btn-menu-mobile" id="btnAbrirMenu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  </header>
+
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
   <div class="dashboard">
 
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebarPrincipal">
+      <button type="button" class="btn-fechar-menu" id="btnFecharMenu" aria-label="Fechar menu">✕</button>
+
       <div class="logo">
         <h3>🌎 Alerta Natural</h3>
         <p>Sistema de Monitoramento</p>
@@ -308,6 +320,7 @@
 <script src="js/calendario.js"></script>
 <script src="js/main.js"></script>
 <script src="js/noticias.js"></script>
+<script src="js/mobile-menu.js"></script>
 
 </body>
 </html>
