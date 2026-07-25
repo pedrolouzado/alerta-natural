@@ -70,7 +70,7 @@ Repositório:
 
 ```bash
 git clone https://github.com/pedrolouzado/alerta-natural.git
-
+````
 
 ## Contexto académico
 
