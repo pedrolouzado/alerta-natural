@@ -66,55 +66,11 @@ Cadastros, alterações e exclusões ficam armazenados no `localStorage` do nave
 
 O sistema é uma demonstração académica. A autenticação é simulada no navegador e não deve ser usada em aplicações reais com dados sensíveis.
 
-## Como executar localmente
-
-Esta seção é destinada a desenvolvedores que desejem baixar o código. Para apenas conhecer o projeto, utilize o link da demonstração online.
-
-1. Clone o repositório:
+Repositório:
 
 ```bash
 git clone https://github.com/pedrolouzado/alerta-natural.git
 
-2. Entre na pasta:
-
-```bash
-cd 2026-1-p1-tiawfe-desastresnaturais
-```
-
-3. Abra a pasta no Visual Studio Code:
-
-```bash
-code .
-```
-
-4. Abra o arquivo `index.html` com a extensão Live Server.
-
-Não é necessário executar JSON Server ou instalar pacotes para usar a versão publicada.
-
-## Estrutura principal
-
-```text
-├── index.html          # Página inicial publicada
-├── css/                # Estilos da versão pública
-├── js/                 # Scripts da versão pública
-├── pages/              # Páginas internas
-├── src/                # Código-fonte académico original
-├── docs/               # Documentação do projeto
-├── presentation/       # Materiais de apresentação
-└── README.md
-```
-
-## Integrantes
-
-- Caio José Guimarães Caldas
-- Isaac Santos Dutra
-- Pedro Marcos Mesquita Louzado
-- Victor Fernandes dos Santos
-- Vitor Fernandes Diniz
-
-## Professora
-
-- Roselene Henrique Pereira Costa
 
 ## Contexto académico
 
@@ -122,20 +78,5 @@ Não é necessário executar JSON Server ou instalar pacotes para usar a versão
 - **Disciplina:** Trabalho Interdisciplinar — Aplicações Web Front-End
 - **Instituição:** PUC Minas
 - **Período:** 1º semestre de 2026
+````
 
-## Documentação
-
-1. [Contexto](docs/01-Contexto.md)
-2. [Product discovery](docs/02-Product-discovery.md)
-3. [Product design](docs/03-Product-design.md)
-4. [Metodologia](docs/04-Metodologia.md)
-5. [Projeto de interface](docs/05-Projeto-interface.md)
-6. [Template padrão](docs/06-Template-padrao.md)
-7. [Arquitetura da solução](docs/07-Arquitetura-solucao.md)
-8. [Plano de testes](docs/08-Plano-testes-software.md)
-9. [Registro de testes](docs/09-Registro-testes-software.md)
-10. [Referências](docs/10-Referencias.md)
-
-## Licença
-
-Consulte o arquivo [LICENSE](LICENSE) do repositório.
