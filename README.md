@@ -6,7 +6,7 @@ O sistema reúne mapa interativo, filtros, calendário de monitoramento, notíci
 
 ## Demonstração online
 
-[🌐 Acessar o Alerta Natural](https://icei-puc-minas-pbe-si-ti.github.io/2026-1-p1-tiawfe-desastresnaturais/)
+[🌐 Acessar o projeto online](https://pedrolouzado.github.io/alerta-natural/)
 
 > Caso o projeto seja publicado em outro repositório, substitua o endereço acima pelo link gerado no GitHub Pages.
 
@@ -73,8 +73,7 @@ Esta seção é destinada a desenvolvedores que desejem baixar o código. Para a
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/ICEI-PUC-Minas-PBE-SI-TI/2026-1-p1-tiawfe-desastresnaturais.git
-```
+git clone https://github.com/pedrolouzado/alerta-natural.git
 
 2. Entre na pasta:
 
